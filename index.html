@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<title>SAC WEB</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    
+<link rel='stylesheet' href='style.css'>
+<link rel='stylesheet' href='material-design-iconic-font.min.css'>
+<link rel='stylesheet' href='stylesac.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif};
+    .fa {
+  padding: 20px;
+  font-size: 60px;
+  width: 70px;
+        width: 150px;
+        height: 150px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: right;
+  width: 80%;
+    height: 35px;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #f40083;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #ff5500;
+  color: white;
+}
+
+    
+</style>
+<body  style="background-image: url(bg.png); background-size: cover">
+
+<!-- Navbar -->
+<div class="w3-top" style="background-color: darkgray;
+		border-bottom: 2px solid #000000;
+		border-right: 2px solid #000000;
+		border-top: 2px solid black;
+		border-left: 2px solid #000000; float: right">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4" ><i  style="font-size:20px;" class="fa fa-home w3-margin-right"></i><img src="logo.jpg" width="30px" height="30px" > &nbsp; &nbsp;    SAC NIT PATNA</a>
+    
+    
+    
+    
+    
+ <div  style="background-color: darkgray; float: right">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav() "><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="SAS COUNCIL 2019"><i class="fa fa-globe" style="height: 20px; width: 20px;"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="NIT PATNA CLUBS"><i class="fa fa-user"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="ABOUT SAC"><i class="fa fa-envelope"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="NIT MAP"><i class="fa fa-globe"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="ABOUT TCF"><i class="fa fa-envelope"></i></a>
+  <a href="#" id="myBtn" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="SIGN UP">SIGN UP</a>
+  <a href="#" id="myBtn2" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="LOG IN">LOG IN</a>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+      <a href="#" class="w3-bar-item w3-button">One new connection request</a>
+      <a href="#" class="w3-bar-item w3-button">Mrinal Kumar posted on your wall</a>
+      <a href="#" class="w3-bar-item w3-button">Aditi Gupta likes your post</a>
+      <a href="#" class="w3-bar-item w3-button">One new connection request</a>
+      <a href="#" class="w3-bar-item w3-button">Mrinal Kumar posted on your wall</a>
+      <a href="#" class="w3-bar-item w3-button">Aditi Gupta likes your post</a>
+    </div>
+  </div>
+     
+   
+     
+     
+     
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+    <img src="me.jpeg"  class="w3-circle" style="height:23px;width:23px;border-radius: 100px" alt="Avatar">
+       <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+      <a href="#" class="w3-bar-item w3-button">One new connection request</a>
+           <a href="#" class="w3-bar-item w3-button">Mrinal Kumar posted on your wall</a></div>
+  </a>
+     
+<form class="example" action="/action_page.php" style="float: right;max-width:300px">
+  <input type="text" style="margin-top: 10px; " placeholder="Search.." name="search2">
+  <button style="margin-top: -330px;" type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+     
+     
+     
+ </div>
+</div>
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+</div>
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card w3-round w3-white">
+        <div class="w3-container">
+         <h4 class="w3-center">Garima Singh</h4>
+         <p class="w3-center"><img src="me.jpeg" class="w3-circle" style="height:106px;width:106px;border-radius: 100px" alt="Avatar"></p>
+         <hr>
+         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Designer, UI</p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Bareilly, UP</p>
+         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> August 12, 2000</p><br> 
+        </div>
+      </div>
+      <br>
+      
+      <!-- Accordion -->
+      <div class="w3-card w3-round">
+        <div class="w3-white">
+          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> TCF FEEDS</button>
+          <div id="Demo1" class="w3-hide w3-container">
+            <p>Some text..</p>
+          </div>
+          <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> TCF RESULTS</button>
+          <div id="Demo2" class="w3-hide w3-container">
+            <p>Some other text..</p>
+          </div>
+          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> INTRAMURALS</button>
+            <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> TCF BAND NIGHT</button>
+          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> TCF EVENTS</button>
+          <div id="Demo2" class="w3-hide w3-container">
+            <p>Some other text..</p>
+          </div>
+          <div id="Demo3" class="w3-hide w3-container">
+         <div class="w3-row-padding">
+         <br>
+           <div class="w3-half">
+             <img src="/w3images/lights.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/mountains.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/forest.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/snow.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+         </div>
+          </div>
+        </div>      
+      </div>
+      <br>
+      
+      <!-- Interests --> 
+      <div class="w3-card w3-round w3-white w3-hide-small">
+        <div class="w3-container">
+          <p>Interests</p>
+          <p>
+            <span class="w3-tag w3-small w3-theme-d5">News</span>
+            <span class="w3-tag w3-small w3-theme-d4">Events</span>
+            <span class="w3-tag w3-small w3-theme-d3">Labels</span>
+            <span class="w3-tag w3-small w3-theme-d2">Games</span>
+            <span class="w3-tag w3-small w3-theme-d1">Friends</span>
+            <span class="w3-tag w3-small w3-theme">Games</span>
+            <span class="w3-tag w3-small w3-theme-l1">Friends</span>
+            <span class="w3-tag w3-small w3-theme-l2">Food</span>
+            <span class="w3-tag w3-small w3-theme-l3">Design</span>
+            <span class="w3-tag w3-small w3-theme-l4">Art</span>
+            <span class="w3-tag w3-small w3-theme-l5">Photos</span>
+            <span class="w3-tag w3-small w3-theme-d4">Events</span>
+            <span class="w3-tag w3-small w3-theme-d3">Labels</span>
+            <span class="w3-tag w3-small w3-theme-d2">Games</span>
+            <span class="w3-tag w3-small w3-theme-d1">Friends</span>
+          </p><br>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Alert Box -->
+      <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+          <i class="fa fa-remove"></i>
+        </span>
+        <p><strong>Hey!</strong></p>
+        <p>You are a trending personality. People are looking at your profile. Find out who.</p><br> 
+      </div>
+    
+    <!-- End Left Column -->
+    </div>
+    
+    <!-- Middle Column -->
+    <div class="w3-col m7">
+    
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card w3-round w3-white">
+            <div class="w3-container w3-padding">
+              <h6 class="w3-opacity">POST YOUR THOUGHTS HERE.</h6>
+              <p contenteditable="true" class="w3-border w3-padding">Status: Feeling Blue</p><br>
+              <button type="button" class="w3-button w3-theme"><i class="fa fa-pencil"></i>  Post</button> 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="avatar1.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:50px">
+        <span class="w3-right w3-opacity">1 min</span>
+        <h4 style="font-size: 15px;">Mrinal Kumar</h4><br>
+        <hr class="w3-clear">
+          <h1 style="color: darkslateblue; font-size: 20px"> ORGANISATION OF CORONA MELANGE 2019 IN NITP CAMPUS. STUDENTS PARTICIPATING FROM ALL COLLEGES.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. This article demonstrates how to integrate "Log in using Google account" functionality to your web application. There are many ways to integrate it. Here, I will explain how to integrate using REST API. Before you can integrate Google sign-In into your website, you must create a Google API Console project and client ID, which you need to call the sign-in API.</p>
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="event.jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="event2.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+          </div>
+        </div>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="avatar2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:50px">
+        <span class="w3-right w3-opacity">16 min</span>
+        <h4 style="font-size: 15px;">Jane Das Sharma</h4><br>
+        <hr class="w3-clear">
+          <h1 style="color: darkslateblue; font-size: 20px"> ORGANISATION OF CORONA MELANGE 2019 IN NITP CAMPUS. STUDENTS PARTICIPATING FROM ALL COLLEGES.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. This article demonstrates how to integrate "Log in using Google account" functionality to your web application. There are many ways to integrate it. Here, I will explain how to integrate using REST API. Before you can integrate Google sign-In into your website, you must create a Google API Console project and client ID, which you need to call the sign-in API.</p>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>  
+
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="avatar3.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:50px">
+        <span class="w3-right w3-opacity">32 min</span>
+        <h4 style="font-size: 15px;">Aditi Gupta</h4><br>
+        <hr class="w3-clear">
+          <h1 style="color: darkslateblue; font-size: 20px"> ORGANISATION OF CORONA MELANGE 2019 IN NITP CAMPUS. STUDENTS PARTICIPATING FROM ALL COLLEGES.</h1>
+        <p>Have you seen this?</p>
+        <img src="event3.jpg" style="width:100%" class="w3-margin-bottom">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div> 
+        
+         <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="avatar4.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:50px">
+        <span class="w3-right w3-opacity">2 hrs ago</span>
+        <h4 style="font-size: 15px;">Gaurav Kumar</h4><br>
+        <hr class="w3-clear">
+          <h1 style="color: darkslateblue; font-size: 20px"> ORGANISATION OF CORONA MELANGE 2019 IN NITP CAMPUS. STUDENTS PARTICIPATING FROM ALL COLLEGES.</h1>
+        <p>The convocation of NITP 2018.</p>
+        <img src="event4.jpg" style="width:100%" class="w3-margin-bottom">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div> 
+         <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="avatar5.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:50px">
+        <span class="w3-right w3-opacity">1 day ago</span>
+        <h4 style="font-size: 15px;">Abhishek Gupta</h4><br>
+        <hr class="w3-clear">
+          <h1 style="color: darkslateblue; font-size: 20px"> ORGANISATION OF CORONA MELANGE 2019 IN NITP CAMPUS. STUDENTS PARTICIPATING FROM ALL COLLEGES.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. This article demonstrates how to integrate "Log in using Google account" functionality to your web application. There are many ways to integrate it. Here, I will explain how to integrate using REST API. Before you can integrate Google sign-In into your website, you must create a Google API Console project and client ID, which you need to call the sign-in API.</p>
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="event5.jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="event6.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+          </div>
+        </div>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>
+
+         <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="avatar1.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:50px">
+        <span class="w3-right w3-opacity">1 day ago</span>
+        <h4 style="font-size: 15px;">Ramkumar Agarwal</h4><br>
+          <h1 style="color: darkslateblue; font-size: 20px"> ORGANISATION OF CORONA MELANGE 2019 IN NITP CAMPUS. STUDENTS PARTICIPATING FROM ALL COLLEGES.</h1>
+        <hr class="w3-clear">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. This article demonstrates how to integrate "Log in using Google account" functionality to your web application. There are many ways to integrate it. Here, I will explain how to integrate using REST API. Before you can integrate Google sign-In into your website, you must create a Google API Console project and client ID, which you need to call the sign-in API.</p>
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="event2.jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="event.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+          </div>
+        </div>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>
+      
+    <!-- End Middle Column -->
+    </div>
+    
+    <!-- Right Column -->
+    <div class="w3-col m2">
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+            <div style="background: gray; font-size: 30px; font-family: fantasy;color:azure; margin: 5px; margin-left: -10px; margin-right: -10px; margin-top: 5px;">NOTICE BOARD  </div>
+          <p><b>Upcoming Events:</b></p>
+          <img src="event.jpg" alt="Forest" style="width:100%;">
+          <p><strong>Band Night 2019</strong></p>
+          <p>Friday 17:00</p>
+          <p><button class="w3-button w3-block w3-theme-l4">More Info</button></p>
+        </div><br>
+          <div class="w3-container">
+              <p><b>Upcoming Competition:</b></p>
+          <img src="event5.jpg" alt="Forest" style="width:100%;">
+          <p><strong>Date Night 2019</strong></p>
+          <p>Friday 20:00</p>
+          <p><button class="w3-button w3-block w3-theme-l4">More Info</button></p>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Connection Request</p>
+          <img src="avatar2.png" alt="Avatar" style="width:50%"><br>
+          <span>Rakshita Jain</span>
+          <div class="w3-row w3-opacity">
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
+            </div>
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+           <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p><b>Like and Follow Us: <br> -------------------------------------</b></p>
+            <a href="#" class="fa fa-facebook" style="height: 40px; width: 40px;border-radius: 50%;padding: 15px;"></a>
+<a href="#" class="fa fa-twitter" style="height: 40px; width: 40px;border-radius: 50%;padding: 15px;"></a>
+<a href="#" class="fa fa-instagram" style="height: 40px; width: 40px;border-radius: 50%;padding: 15px;"s></a><br> <br>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+        <p>ADS</p>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+        <p><i class="fa fa-bug w3-xxlarge"></i></p>
+      </div>
+      
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+   
+ <!-- Sign up form -->
+        <section class="formtitle"> <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2 style="color:azure;"><center> SIGN UP HERE</center></h2>
+    </div>
+            <div class="container">
+                <div class="signup-content">
+      <span class="close">&times;</span>
+                    <div class="signup-form">
+                        <form method="POST" class="register-form" id="register-form">
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Your Name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Your Email"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="pass" id="pass" placeholder="Password"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
+                        <a href="#" class="signup-image-link">I am already member</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+</div>
+ 
+    </div>
+    
+    <!-- The Modal -->
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+       <section class="formtitle"> <div class="modal-header">
+      <span class="close2">&times;</span>
+      <h2 style="color:azure;"><center> LOG IN HERE</center></h2>
+    </div>
+                <div class="signin-content">
+                    <div class="signin-image">
+                        <figure><img src="images/signin-image.jpg" alt="sing up image"></figure>
+                        <a href="#" class="signup-image-link">Create an account</a>
+                    </div>
+
+                    <div class="signin-form">
+                        <form method="POST" class="register-form" id="login-form">
+                            <div class="form-group">
+                                <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="your_name" id="your_name" placeholder="Your Name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="your_pass" id="your_pass" placeholder="Password"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
+                            </div>
+                        </form>
+                        <div class="social-login">
+                            <span class="social-label">Or login with</span>
+                            <ul class="socials">
+                                <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
+                                <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
+                                <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<script>
+// Accordion
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme-d1";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme-d1", "");
+  }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+    
+    
+    var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+
+  var modal2 = document.getElementById("myModal2");
+
+// Get the button that opens the modal
+var btn2 = document.getElementById("myBtn2");
+
+// Get the <span> element that closes the modal
+var span2 = document.getElementsByClassName("close2")[0];
+
+// When the user clicks the button, open the modal 
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html> 
